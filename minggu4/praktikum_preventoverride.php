@@ -22,3 +22,4 @@ $SportsCarl = new SportsCar();
 //Get the result of the hello word
 echo $SportsCarl -> hello();
 
+?>
