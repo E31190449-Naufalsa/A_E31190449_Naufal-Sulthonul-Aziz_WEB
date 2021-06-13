@@ -16,13 +16,13 @@ class Mahasiswa_model extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('tm_user');
 		$this->db->join('tm_grup','tm_user.grup = tm_grup.id_grup');
-		$query = $this->db->get();
+		$query = $this->db->get();//untuk mengembalikan  nilai dari variabel query
 		return $query;
 	}
 
-	public function input_data($data,$table)
+	public function input_data($data,$table)//untuk memmanggil fungsi dari input data
 	{
-		$this->db->insert($table,$data);
+		$this->db->insert($table,$data);//berfungsi untuk menyimpan file input data
 	}
 }
 ?>
